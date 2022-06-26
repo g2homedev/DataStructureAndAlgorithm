@@ -1,22 +1,22 @@
 # Implementation
 ## Initialization
-`
+```
 function initialize ()
     for i=1 to N
         parent [i] =i;
     end
 end
-`
+```
 ## Union
-`
+```
 function union (a,b)
     aRoot = find (a)
     bRoot = find (b)
     parent [aRoot] = bRoot
 end
-`
+```
 ## Find
-`
+```
 function find (a)
     if (parent[a] == a)
         return a
@@ -24,4 +24,4 @@ function find (a)
         return parent[a] = find (parent[a])
     end
 end
-`
+```

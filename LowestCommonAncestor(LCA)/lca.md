@@ -6,8 +6,8 @@
 ## Result
     Stores the depth and parent of each node
 ## Code
-`
-function DFS (v):
+```
+function DFS (v)
     Visist[v] = true
     for each u in Adj[v] do
         if Visited[u] = false then
@@ -17,7 +17,9 @@ function DFS (v):
         end
     end
 end
-`
+```
+
+
 # Process
     Build Sparse Table structure for binary lifting
 ## Data
@@ -26,8 +28,9 @@ end
 ## Result
     The sparse table ST[N][log(N)]
 ## Code
-`
+```
 Log = Ceil (Log2(N))
+
 for i = 1 to N do
     ST[i][0] = Par[i]
 end
@@ -37,7 +40,7 @@ for j = 1 to Log do
         ST[i][j] = ST[ST[i][j-1]][j-1]
     end
 end
-`
+```
 
 # Algorithm
     Efficient LCA Query
