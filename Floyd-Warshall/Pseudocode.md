@@ -1,6 +1,9 @@
-**Data**: A direct weighted graph G (V,E)
-**Result**: Shortest path between each pair of vertices in G
-
+# Data
+    A direct weighted graph G (V,E)
+# Result
+    Shortest path between each pair of vertices in G
+# Code
+`
 for each d in V do
     distance [d][d] = 0
 end
@@ -20,3 +23,4 @@ for k =1 to n do
         end
     end
 end
+`
