@@ -52,3 +52,24 @@ end
     Returns the LCA of u and v
 
 ## Code
+
+```
+if Depth[u] < Depth[v] then
+    Swap (u,v)
+end
+Log = Ceil(Log2(N))
+Need = Depth[u] - Depth[v]
+for j = Log to 0 do
+    if Math.pow(2,j) <= Need then
+        u = ST[u][j]
+        Need = Need - Math.pow(2,j)
+    end
+end
+for j = Log to 0 do
+    if ST[u][j] # ST[v][j] then
+        u = ST[u][j]
+        v = ST[v][j]
+    end
+end
+return ST[u][0]
+```
