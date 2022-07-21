@@ -1,3 +1,4 @@
+```
 Procedure binary_search
    A ← sorted array
    n ← size of array
@@ -23,3 +24,4 @@ Procedure binary_search
    end while
    
 end procedure
+```
